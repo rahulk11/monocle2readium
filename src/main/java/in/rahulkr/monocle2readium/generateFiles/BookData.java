@@ -133,6 +133,10 @@ public class BookData {
         this.ff05InstId = ff05InstId;
     }
 
+    public String getFf05InstId() {
+        return ff05InstId;
+    }
+
     public void setContentsList(NavigationItem parent, String contents) {
         try {
             JSONArray contentsArray = new JSONArray(contents);
