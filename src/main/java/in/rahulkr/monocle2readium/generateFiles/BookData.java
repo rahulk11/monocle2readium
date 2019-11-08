@@ -218,6 +218,11 @@ public class BookData {
         return null;
     }
 
+    public SpineItem getComponentByUrl(String fileUrl) {
+        String href = fileUrl.substring(fileUrl.indexOf(this.getFf05InstId()));
+        return getComponentByHref(href);
+    }
+
     public ArrayList<SpineItem> getComponentsList() {
         return componentsList;
     }
