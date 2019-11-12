@@ -18,9 +18,18 @@ public class SpineItem {
     private long chapterSize;
     private long sizeOfPrevChapters;
 
+    public SpineItem(String path, String id, String title) {
+        this.href = path;
+        this.idRef = id;
+        this.title = title;
+    }
+
     public SpineItem(String path, String id) {
         this.href = path;
         this.idRef = id;
+        if (NavigationItem.srcTitleMap != null)
+            this.title = NavigationItem.srcTitleMap.get(href);
+        else this.title = "";
     }
 
     public String getIdRef() {
