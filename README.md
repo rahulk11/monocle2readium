@@ -1,2 +1,2 @@
 # monocle2readium
-android library to use monocle epubs in readium 
+android library to convert monocle eBooks to standard ePUBs
